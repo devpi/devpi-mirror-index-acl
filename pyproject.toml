@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+dynamic = ["readme"]
+name = "devpi-mirror-index-acl"
+version = "0.1.0"
+description = "Add command line option to limit mirror index creation to specific users."
+dependencies = [
+    "devpi-server>=6.9.0",
+]
+requires-python = ">=3.8"
+maintainers = [
+    {name = "Florian Schulze", email = "mail@pyfidelity.com"}
+]
+license = {file = "LICENSE"}
+
+
+[project.entry-points.devpi_server]
+devpi-mirror-index-acl = "devpi_mirror_index_acl"
+
+
+[tool.setuptools]
+py-modules = ['devpi_mirror_index_acl']
+
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst"]}
