@@ -40,3 +40,18 @@ When using a configuration yaml file you can use an explicit list::
     devpi-server:
       acl-mirror-index-create:
         - "root"
+
+
+Changelog
+=========
+
+1.0.1 - Unreleased
+------------------
+
+- Require at least devpi-server 6.10.0.
+
+
+1.0.0 - 2024-02-16
+------------------
+
+- Initial release.

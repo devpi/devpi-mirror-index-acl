@@ -6,10 +6,10 @@ build-backend = "setuptools.build_meta"
 [project]
 dynamic = ["readme"]
 name = "devpi-mirror-index-acl"
-version = "1.0.0"
+version = "1.0.1.dev0"
 description = "Add command line option to limit mirror index creation to specific users."
 dependencies = [
-    "devpi-server>=6.9.0",
+    "devpi-server>=6.10.0",
 ]
 requires-python = ">=3.8"
 maintainers = [
