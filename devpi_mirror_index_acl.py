@@ -20,7 +20,7 @@ def devpiserver_auth_denials(request, acl, user, stage):
         return
     if request.context.index is None:
         return
-    if request.json.get('type') != 'mirror':
+    if request.json.get("type") not in {"mirror", "remote"}:
         return
     xom = request.registry['xom']
     if xom.config.args.acl_mirror_index_create is None:
